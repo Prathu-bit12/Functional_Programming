@@ -1,0 +1,44 @@
+class House:
+    def __init__(self, r, p, l, c):
+        self.__rooms = r
+        self.__price = p
+        self.__location = l
+        self.__color = c
+
+    def set_rooms(self, r):
+        self.__rooms = r
+
+    def set_price(self, p):
+        self.__price = p
+
+    def set_location(self, l):
+        self.__location = l
+
+    def set_color(self, c):
+        self.__color = c
+
+    def get_rooms(self):
+        return self.__rooms
+
+    def get_price(self):
+        return self.__price
+
+    def get_location(self):
+        return self.__location
+
+    def get_color(self):
+        return self.__color
+    
+
+
+h1 = House(3, 50000, "pune", "yellow")
+h1.set_rooms(6)
+h1.set_price(45000)
+h1.set_location("mumbai")
+h1.set_color("white")
+print("updated rooms:",h1.get_rooms())
+print("updated price:", h1.get_price())
+print("updated location:",h1.get_location())
+print("updated color:",h1.get_color())
+
+
